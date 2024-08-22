@@ -1,0 +1,2849 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='tree-census-NYC_2015' inline='true' name='federated.0t8s55w1f7v5vn17te6iy010laek' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tree-census-NYC_2015' name='textscan.18hxxg70j4dgdc1ato25w0r95c2r'>
+            <connection class='textscan' directory='/Users/spelaez/Desktop/PROJECTS/datasets' filename='tree_species_nyc.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18hxxg70j4dgdc1ato25w0r95c2r' name='income-NYC_2015.csv' table='[income-NYC_2015#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_CO'>
+            <column datatype='string' name='GEO_ID' ordinal='0' />
+            <column datatype='integer' name='zipcode' ordinal='1' />
+            <column datatype='integer' name='HouseholdsEstimateTotal' ordinal='2' />
+            <column datatype='integer' name='HouseholdsMargin of ErrorTotal' ordinal='3' />
+            <column datatype='real' name='HouseholdsEstimateMedian income (dollars)' ordinal='4' />
+            <column datatype='integer' name='HouseholdsMargin of ErrorMedian income (dollars)' ordinal='5' />
+            <column datatype='integer' name='HouseholdsEstimateMean income (dollars)' ordinal='6' />
+            <column datatype='integer' name='HouseholdsMargin of ErrorMean income (dollars)' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.18hxxg70j4dgdc1ato25w0r95c2r' name='tree-census-NYC_2015.csv' table='[tree-census-NYC_2015#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_CO'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='tree_id' ordinal='1' />
+              <column datatype='integer' name='tree_dbh' ordinal='2' />
+              <column datatype='integer' name='stump_diam' ordinal='3' />
+              <column datatype='string' name='status' ordinal='4' />
+              <column datatype='string' name='health' ordinal='5' />
+              <column datatype='string' name='spc_latin' ordinal='6' />
+              <column datatype='string' name='spc_common' ordinal='7' />
+              <column datatype='string' name='address' ordinal='8' />
+              <column datatype='integer' name='zipcode' ordinal='9' />
+              <column datatype='integer' name='borocode' ordinal='10' />
+              <column datatype='string' name='boroname' ordinal='11' />
+              <column datatype='string' name='nta_name' ordinal='12' />
+              <column datatype='string' name='state' ordinal='13' />
+              <column datatype='string' name='Latitude' ordinal='14' />
+              <column datatype='string' name='longitude' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='textscan.18hxxg70j4dgdc1ato25w0r95c2r' name='income-NYC_2015.csv' table='[income-NYC_2015#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_CO'>
+              <column datatype='string' name='GEO_ID' ordinal='0' />
+              <column datatype='integer' name='zipcode' ordinal='1' />
+              <column datatype='integer' name='HouseholdsEstimateTotal' ordinal='2' />
+              <column datatype='integer' name='HouseholdsMargin of ErrorTotal' ordinal='3' />
+              <column datatype='real' name='HouseholdsEstimateMedian income (dollars)' ordinal='4' />
+              <column datatype='integer' name='HouseholdsMargin of ErrorMedian income (dollars)' ordinal='5' />
+              <column datatype='integer' name='HouseholdsEstimateMean income (dollars)' ordinal='6' />
+              <column datatype='integer' name='HouseholdsMargin of ErrorMean income (dollars)' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1]' value='[tree-census-NYC_2015.csv].[F1]' />
+          <map key='[GEO_ID]' value='[income-NYC_2015.csv].[GEO_ID]' />
+          <map key='[HouseholdsEstimateMean income (dollars)]' value='[income-NYC_2015.csv].[HouseholdsEstimateMean income (dollars)]' />
+          <map key='[HouseholdsEstimateMedian income (dollars)]' value='[income-NYC_2015.csv].[HouseholdsEstimateMedian income (dollars)]' />
+          <map key='[HouseholdsEstimateTotal]' value='[income-NYC_2015.csv].[HouseholdsEstimateTotal]' />
+          <map key='[HouseholdsMargin of ErrorMean income (dollars)]' value='[income-NYC_2015.csv].[HouseholdsMargin of ErrorMean income (dollars)]' />
+          <map key='[HouseholdsMargin of ErrorMedian income (dollars)]' value='[income-NYC_2015.csv].[HouseholdsMargin of ErrorMedian income (dollars)]' />
+          <map key='[HouseholdsMargin of ErrorTotal]' value='[income-NYC_2015.csv].[HouseholdsMargin of ErrorTotal]' />
+          <map key='[Latitude]' value='[tree-census-NYC_2015.csv].[Latitude]' />
+          <map key='[address]' value='[tree-census-NYC_2015.csv].[address]' />
+          <map key='[borocode]' value='[tree-census-NYC_2015.csv].[borocode]' />
+          <map key='[boroname]' value='[tree-census-NYC_2015.csv].[boroname]' />
+          <map key='[health]' value='[tree-census-NYC_2015.csv].[health]' />
+          <map key='[longitude]' value='[tree-census-NYC_2015.csv].[longitude]' />
+          <map key='[nta_name]' value='[tree-census-NYC_2015.csv].[nta_name]' />
+          <map key='[spc_common]' value='[tree-census-NYC_2015.csv].[spc_common]' />
+          <map key='[spc_latin]' value='[tree-census-NYC_2015.csv].[spc_latin]' />
+          <map key='[state]' value='[tree-census-NYC_2015.csv].[state]' />
+          <map key='[status]' value='[tree-census-NYC_2015.csv].[status]' />
+          <map key='[stump_diam]' value='[tree-census-NYC_2015.csv].[stump_diam]' />
+          <map key='[tree_dbh]' value='[tree-census-NYC_2015.csv].[tree_dbh]' />
+          <map key='[tree_id]' value='[tree-census-NYC_2015.csv].[tree_id]' />
+          <map key='[zipcode (income-NYC_2015.csv)]' value='[income-NYC_2015.csv].[zipcode]' />
+          <map key='[zipcode]' value='[tree-census-NYC_2015.csv].[zipcode]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_CO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_CO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tree_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tree_id]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>tree_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tree_dbh</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tree_dbh]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>tree_dbh</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stump_diam</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stump_diam]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>stump_diam</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>health</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[health]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>health</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spc_latin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spc_latin]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>spc_latin</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spc_common</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[spc_common]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>spc_common</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>borocode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[borocode]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>borocode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>boroname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[boroname]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>boroname</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nta_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nta_name]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>nta_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[tree-census-NYC_2015.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEO_ID]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>GEO_ID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode (income-NYC_2015.csv)]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>zipcode</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsEstimateTotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HouseholdsEstimateTotal]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsEstimateTotal</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsMargin of ErrorTotal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HouseholdsMargin of ErrorTotal]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsMargin of ErrorTotal</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsEstimateMedian income (dollars)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HouseholdsEstimateMedian income (dollars)]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsEstimateMedian income (dollars)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsMargin of ErrorMedian income (dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HouseholdsMargin of ErrorMedian income (dollars)]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsMargin of ErrorMedian income (dollars)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsEstimateMean income (dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HouseholdsEstimateMean income (dollars)]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsEstimateMean income (dollars)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseholdsMargin of ErrorMean income (dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HouseholdsMargin of ErrorMean income (dollars)]</local-name>
+            <parent-name>[income-NYC_2015.csv]</parent-name>
+            <remote-alias>HouseholdsMargin of ErrorMean income (dollars)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Boroname (copy)' datatype='string' name='[Boroname (copy)_3438216893865107456]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[boroname]' />
+      </column>
+      <column caption='Geo Id' datatype='string' name='[GEO_ID]' role='dimension' type='nominal' />
+      <column caption='Households Estimate Total' datatype='integer' name='[HouseholdsEstimateTotal]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='integer' datatype-customized='true' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Sum' caption='Zipcode (copy)' datatype='integer' default-format='*00000' name='[Zipcode (copy)_3383540379633086464]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal'>
+        <calculation class='tableau' formula='[zipcode]' />
+        <aliases>
+          <alias key='10035' value='Poorest: 10035' />
+          <alias key='10069' value='Richest: 10069' />
+          <alias key='10303' value='Poorest: 10303' />
+          <alias key='10309' value='Richest: 10309' />
+          <alias key='10454' value='Poorest: 10454' />
+          <alias key='10471' value='Richest: 10471' />
+          <alias key='11104' value='Richest: 11104' />
+          <alias key='11109' value='Richest: 11109' />
+          <alias key='11215' value='Richest: 11205' />
+          <alias key='11239' value='Poorest: 11239' />
+          <alias key='11355' value='Poorest: 11355' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='income-NYC_2015.csv' datatype='table' name='[__tableau_internal_object_id__].[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='tree-census-NYC_2015.csv' datatype='table' name='[__tableau_internal_object_id__].[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Borocode' datatype='integer' name='[borocode]' role='measure' type='quantitative' />
+      <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+      <column caption='Health' datatype='string' name='[health]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='integer' datatype-customized='true' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Nta Name' datatype='string' name='[nta_name]' role='dimension' type='nominal' />
+      <column caption='Spc Common' datatype='string' name='[spc_common]' role='dimension' type='nominal' />
+      <column caption='Spc Latin' datatype='string' name='[spc_latin]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Stump Diam' datatype='integer' name='[stump_diam]' role='measure' type='quantitative' />
+      <column caption='Trunk Diameter' datatype='integer' name='[tree_dbh]' role='measure' type='quantitative' />
+      <column caption='Tree Id' datatype='integer' name='[tree_id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='zipcode (income-NYC 2015.csv)' datatype='integer' default-format='*00000' name='[zipcode (income-NYC_2015.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[Boroname (copy)_3438216893865107456]' derivation='None' name='[none:Boroname (copy)_3438216893865107456:nk]' pivot='key' type='nominal' />
+      <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+      <column-instance column='[health]' derivation='None' name='[none:health:nk]' pivot='key' type='nominal' />
+      <column-instance column='[status]' derivation='None' name='[none:status:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/dz/hv3d6sgn2p1_101dr6mqzq1r0000gn/T/tableau-temp/#TableauTemp_1hzn9wj0ecqe9o11h9syk05mzbv7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/22/2024 04:41:00 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55' table='[Extract].[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A' table='[Extract].[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]' type='table' />
+            <relation name='income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55' table='[Extract].[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[F1]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[F1]' />
+            <map key='[GEO_ID]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[GEO_ID]' />
+            <map key='[HouseholdsEstimateMean income (dollars)]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsEstimateMean income (dollars)]' />
+            <map key='[HouseholdsEstimateMedian income (dollars)]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsEstimateMedian income (dollars)]' />
+            <map key='[HouseholdsEstimateTotal]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsEstimateTotal]' />
+            <map key='[HouseholdsMargin of ErrorMean income (dollars)]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsMargin of ErrorMean income (dollars)]' />
+            <map key='[HouseholdsMargin of ErrorMedian income (dollars)]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsMargin of ErrorMedian income (dollars)]' />
+            <map key='[HouseholdsMargin of ErrorTotal]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[HouseholdsMargin of ErrorTotal]' />
+            <map key='[Latitude]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[Latitude]' />
+            <map key='[address]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[address]' />
+            <map key='[borocode]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[borocode]' />
+            <map key='[boroname]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[boroname]' />
+            <map key='[health]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[health]' />
+            <map key='[longitude]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[longitude]' />
+            <map key='[nta_name]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[nta_name]' />
+            <map key='[spc_common]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[spc_common]' />
+            <map key='[spc_latin]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[spc_latin]' />
+            <map key='[state]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[state]' />
+            <map key='[status]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[status]' />
+            <map key='[stump_diam]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[stump_diam]' />
+            <map key='[tree_dbh]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[tree_dbh]' />
+            <map key='[tree_id]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[tree_id]' />
+            <map key='[zipcode (income-NYC_2015.csv)]' value='[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55].[zipcode]' />
+            <map key='[zipcode]' value='[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A].[zipcode]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>683788</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tree_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tree_id]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>tree_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>683788</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tree_dbh</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tree_dbh]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>tree_dbh</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stump_diam</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stump_diam]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>stump_diam</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>health</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[health]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>health</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spc_latin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spc_latin]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>spc_latin</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>spc_common</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[spc_common]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>spc_common</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>521943</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[zipcode]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>zipcode</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>238</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>borocode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[borocode]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>borocode</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>boroname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[boroname]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>boroname</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nta_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nta_name]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>nta_name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>199</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>13</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>14</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>15</ordinal>
+              <family>tree-census-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GEO_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GEO_ID]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>GEO_ID</remote-alias>
+              <ordinal>16</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[zipcode (income-NYC_2015.csv)]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>zipcode</remote-alias>
+              <ordinal>17</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsEstimateTotal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HouseholdsEstimateTotal]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsEstimateTotal</remote-alias>
+              <ordinal>18</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsMargin of ErrorTotal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HouseholdsMargin of ErrorTotal]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsMargin of ErrorTotal</remote-alias>
+              <ordinal>19</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>153</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsEstimateMedian income (dollars)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HouseholdsEstimateMedian income (dollars)]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsEstimateMedian income (dollars)</remote-alias>
+              <ordinal>20</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>184</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsMargin of ErrorMedian income (dollars)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HouseholdsMargin of ErrorMedian income (dollars)]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsMargin of ErrorMedian income (dollars)</remote-alias>
+              <ordinal>21</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsEstimateMean income (dollars)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HouseholdsEstimateMean income (dollars)]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsEstimateMean income (dollars)</remote-alias>
+              <ordinal>22</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseholdsMargin of ErrorMean income (dollars)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HouseholdsMargin of ErrorMean income (dollars)]</local-name>
+              <parent-name>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</parent-name>
+              <remote-alias>HouseholdsMargin of ErrorMean income (dollars)</remote-alias>
+              <ordinal>23</ordinal>
+              <family>income-NYC_2015.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:status:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Alive&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Stump&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dead&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Boroname (copy)_3438216893865107456:nk]' palette='miller_stone_10_0' type='palette'>
+            <map to='#7e756d'>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+            <map to='#b9aa97'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:boroname:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#257740'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+            <map to='#479751'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+            <map to='#76af56'>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </map>
+            <map to='#b2c25b'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:health:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#479751'>
+              <bucket>&quot;Good&quot;</bucket>
+            </map>
+            <map to='#a3bd5a'>
+              <bucket>&quot;Fair&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Poor&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[ZipCode].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='income-NYC_2015.csv' id='income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55'>
+            <properties context=''>
+              <relation connection='textscan.18hxxg70j4dgdc1ato25w0r95c2r' name='income-NYC_2015.csv' table='[income-NYC_2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_CO'>
+                  <column datatype='string' name='GEO_ID' ordinal='0' />
+                  <column datatype='integer' name='zipcode' ordinal='1' />
+                  <column datatype='integer' name='HouseholdsEstimateTotal' ordinal='2' />
+                  <column datatype='integer' name='HouseholdsMargin of ErrorTotal' ordinal='3' />
+                  <column datatype='real' name='HouseholdsEstimateMedian income (dollars)' ordinal='4' />
+                  <column datatype='integer' name='HouseholdsMargin of ErrorMedian income (dollars)' ordinal='5' />
+                  <column datatype='integer' name='HouseholdsEstimateMean income (dollars)' ordinal='6' />
+                  <column datatype='integer' name='HouseholdsMargin of ErrorMean income (dollars)' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55' table='[Extract].[income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55]' type='table' />
+            </properties>
+          </object>
+          <object caption='tree-census-NYC_2015.csv' id='tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A'>
+            <properties context=''>
+              <relation connection='textscan.18hxxg70j4dgdc1ato25w0r95c2r' name='tree-census-NYC_2015.csv' table='[tree-census-NYC_2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_CO'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='tree_id' ordinal='1' />
+                  <column datatype='integer' name='tree_dbh' ordinal='2' />
+                  <column datatype='integer' name='stump_diam' ordinal='3' />
+                  <column datatype='string' name='status' ordinal='4' />
+                  <column datatype='string' name='health' ordinal='5' />
+                  <column datatype='string' name='spc_latin' ordinal='6' />
+                  <column datatype='string' name='spc_common' ordinal='7' />
+                  <column datatype='string' name='address' ordinal='8' />
+                  <column datatype='integer' name='zipcode' ordinal='9' />
+                  <column datatype='integer' name='borocode' ordinal='10' />
+                  <column datatype='string' name='boroname' ordinal='11' />
+                  <column datatype='string' name='nta_name' ordinal='12' />
+                  <column datatype='string' name='state' ordinal='13' />
+                  <column datatype='string' name='Latitude' ordinal='14' />
+                  <column datatype='string' name='longitude' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A' table='[Extract].[tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[zipcode]' />
+              <expression op='[zipcode (income-NYC_2015.csv)]' />
+            </expression>
+            <first-end-point object-id='tree-census-NYC_2015.csv_B0C4CDA0617944B0957E85CC9CC9231A' />
+            <second-end-point object-id='income-NYC_2015.csv_B1F9154F2F8F4623B7F8E3412C699B55' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='A. Total Trees'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Marker Felt' fontsize='20'>Total Trees in Metro NY</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column-instance column='[tree_id]' derivation='Count' name='[cnt:tree_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Tree Id' datatype='integer' name='[tree_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#3e8d26' fontname='Luminari' fontsize='48'>&lt;</run>
+                <run bold='true' fontcolor='#3e8d26' fontname='Luminari' fontsize='48'>[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]</run>
+                <run bold='true' fontcolor='#3e8d26' fontname='Luminari' fontsize='48'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7342306C-E862-461F-BABF-2BF13A31C687}' />
+    </worksheet>
+    <worksheet name='B. Tree Count Bar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Marker Felt' fontsize='20'>Trees Across Boroughs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column-instance column='[tree_id]' derivation='Count' name='[cnt:tree_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+            <column caption='Tree Id' datatype='integer' name='[tree_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' field-type='quantitative' max='270000' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' scope='cols' value='Number of trees' />
+            <format attr='height' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' value='55' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' value='20' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='font-family' scope='rows' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' />
+              <lod column='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>In </run>
+                <run bold='true'><![CDATA[<[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]> ]]></run>
+                <run>there are </run>
+                <run bold='true'><![CDATA[<[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]> ]]></run>
+                <run>trees</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='287' />
+                <format attr='maxwidth' value='287' />
+                <format attr='minheight' value='100' />
+                <format attr='maxheight' value='100' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]</rows>
+        <cols>[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:tree_id:qk]</cols>
+      </table>
+      <simple-id uuid='{308B7F75-ADD2-4E94-A7B2-1D39F5C90773}' />
+    </worksheet>
+    <worksheet name='C. Income per Borough'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Marker Felt' fontsize='20'>Income Across Boroughs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column datatype='integer' name='[HouseholdsEstimateMean income (dollars)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[HouseholdsEstimateMedian income (dollars)]' role='measure' type='quantitative' />
+            <column-instance column='[HouseholdsEstimateMean income (dollars)]' derivation='Avg' name='[avg:HouseholdsEstimateMean income (dollars):qk]' pivot='key' type='quantitative' />
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column-instance column='[HouseholdsEstimateMedian income (dollars)]' derivation='Median' name='[med:HouseholdsEstimateMedian income (dollars):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:boroname:nk]' />
+              <groupfilter function='member' level='[none:boroname:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Bronx&quot;</bucket>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+              <bucket>&quot;Manhattan&quot;</bucket>
+              <bucket>&quot;Queens&quot;</bucket>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:HouseholdsEstimateMean income (dollars):qk]' scope='rows' value='Mean Income ($)' />
+            <encoding attr='space' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:HouseholdsEstimateMean income (dollars):qk]' field-type='quantitative' max='160000.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]' scope='cols' value='Median Income ($)' />
+            <encoding attr='space' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]' field-type='quantitative' max='110000.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' />
+              <text column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.9010497331619263' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:HouseholdsEstimateMean income (dollars):qk]</rows>
+        <cols>[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontalignment='0'>Manhattan has the highest reported median anual income </run>
+              <run bold='true' fontalignment='0' fontcolor='#3e8d26' fontname='Tableau Bold'>$163.750</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='27605.363984674332'>
+                  <node-reference>
+                    <axis>[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='154482.75862068965'>
+                  <node-reference>
+                    <axis>[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:HouseholdsEstimateMean income (dollars):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='55210.727969348663'>
+                  <node-reference>
+                    <axis>[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='93793.10344827587'>
+                  <node-reference>
+                    <axis>[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:HouseholdsEstimateMean income (dollars):qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{5AD841DE-5498-4285-964B-0BDB6901E517}' />
+    </worksheet>
+    <worksheet name='D. Income by Zipcode Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Marker Felt' fontsize='20'>Income by Zipcode </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column datatype='real' name='[HouseholdsEstimateMedian income (dollars)]' role='measure' type='quantitative' />
+            <column-instance column='[HouseholdsEstimateMedian income (dollars)]' derivation='None' name='[none:HouseholdsEstimateMedian income (dollars):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' included-values='in-range'>
+            <min>300.0</min>
+            <max>193510.0</max>
+          </filter>
+          <slices>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[Longitude (generated)]' field-type='quantitative' max='-8167774.1453883396' min='-8282530.6372149661' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[Latitude (generated)]' field-type='quantitative' max='5002161.4764826978' min='4925421.0219902359' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' num-steps='8' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' value='Households Estimate Median income (dollars)'>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold'>Households Estimate Median income (dollars)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.51999998092651367' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' />
+              <lod column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:zipcode:ok]' />
+              <geometry column='[federated.0t8s55w1f7v5vn17te6iy010laek].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[Latitude (generated)]</rows>
+        <cols>[federated.0t8s55w1f7v5vn17te6iy010laek].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4E48DDB6-D479-4148-BA9E-FE14A7EB6DE8}' />
+    </worksheet>
+    <worksheet name='E. Zipcodes by Median Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column datatype='real' name='[HouseholdsEstimateMedian income (dollars)]' role='measure' type='quantitative' />
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column-instance column='[HouseholdsEstimateMedian income (dollars)]' derivation='Median' name='[med:HouseholdsEstimateMedian income (dollars):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[zipcode]' derivation='None' name='[none:zipcode:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]' included-values='in-range'>
+            <min>625.0</min>
+            <max>163750.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]'>
+            <groupfilter function='member' level='[none:boroname:nk]' member='&quot;Queens&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:zipcode:ok]'>
+            <groupfilter from='83' function='range' level='[none:zipcode:ok]' to='11697' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:zipcode:ok]' direction='DESC' using='[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]' />
+          <slices>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]</column>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:zipcode:ok]</column>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:zipcode:ok]</rows>
+        <cols>[federated.0t8s55w1f7v5vn17te6iy010laek].[med:HouseholdsEstimateMedian income (dollars):qk]</cols>
+      </table>
+      <simple-id uuid='{63F74346-6CF3-460F-B03D-D8F967060977}' />
+    </worksheet>
+    <worksheet name='F. Rich vs Poor'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Marker Felt' fontsize='18'>Tree Health in Richest vs Poorest Areas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column aggregation='Sum' caption='Zipcode (copy)' datatype='integer' default-format='*00000' name='[Zipcode (copy)_3383540379633086464]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal'>
+              <calculation class='tableau' formula='[zipcode]' />
+              <aliases>
+                <alias key='10035' value='Poorest: 10035' />
+                <alias key='10069' value='Richest: 10069' />
+                <alias key='10303' value='Poorest: 10303' />
+                <alias key='10309' value='Richest: 10309' />
+                <alias key='10454' value='Poorest: 10454' />
+                <alias key='10471' value='Richest: 10471' />
+                <alias key='11104' value='Richest: 11104' />
+                <alias key='11109' value='Richest: 11109' />
+                <alias key='11215' value='Richest: 11205' />
+                <alias key='11239' value='Poorest: 11239' />
+                <alias key='11355' value='Poorest: 11355' />
+              </aliases>
+            </column>
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column caption='Health' datatype='string' name='[health]' role='dimension' type='nominal' />
+            <column-instance column='[Zipcode (copy)_3383540379633086464]' derivation='None' name='[none:Zipcode (copy)_3383540379633086464:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[health]' derivation='None' name='[none:health:nk]' pivot='key' type='nominal' />
+            <column-instance column='[health]' derivation='Count' name='[pcto:cnt:health:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column aggregation='Sum' caption='Zipcode' datatype='integer' default-format='*00000' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10035' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10069' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10303' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10309' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10454' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='10471' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11109' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11208' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11215' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11239' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11355' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Zipcode (copy)_3383540379633086464:ok]' />
+              <groupfilter function='member' level='[none:Zipcode (copy)_3383540379633086464:ok]' member='11208' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>10035</bucket>
+              <bucket>10069</bucket>
+              <bucket>10303</bucket>
+              <bucket>10309</bucket>
+              <bucket>10454</bucket>
+              <bucket>10471</bucket>
+              <bucket>11355</bucket>
+              <bucket>11109</bucket>
+              <bucket>11215</bucket>
+              <bucket>11239</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:health:nk]' />
+              <groupfilter function='member' level='[none:health:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Good&quot;</bucket>
+              <bucket>&quot;Fair&quot;</bucket>
+              <bucket>&quot;Poor&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]</column>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[pcto:cnt:health:qk:2]' scope='rows' value='Total Trees in Zipcode (%)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-orientation' data-class='subtotal' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[pcto:cnt:health:qk:2]' value='bold' />
+            <format attr='font-family' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[pcto:cnt:health:qk:2]' value='Tableau Bold' />
+            <format attr='font-family' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' value='Tableau Bold' />
+            <format attr='font-weight' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]' value='bold' />
+            <format attr='font-family' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok]' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[pcto:cnt:health:qk:2]</rows>
+        <cols>([federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk] / [federated.0t8s55w1f7v5vn17te6iy010laek].[none:Zipcode (copy)_3383540379633086464:ok])</cols>
+      </table>
+      <simple-id uuid='{6644C45C-598C-4F84-8E20-6780E85A2DDB}' />
+    </worksheet>
+    <worksheet name='G. Tree Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Marker Felt' fontsize='20'>Tree Status per Borough</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column-instance column='[status]' derivation='Count' name='[cnt:status:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[boroname]' derivation='None' name='[none:boroname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[status]' derivation='None' name='[none:status:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' direction='DESC' using='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:status:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:status:qk]' scope='cols' value='Number of Trees' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' value='bold' />
+            <format attr='font-family' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' value='Tableau Bold' />
+            <format attr='font-family' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:status:qk]' value='Tableau Bold' />
+            <format attr='font-weight' field='[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:status:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]</rows>
+        <cols>[federated.0t8s55w1f7v5vn17te6iy010laek].[cnt:status:qk]</cols>
+      </table>
+      <simple-id uuid='{C2E58E5E-3090-44EC-A5E9-1CB810E70CF6}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tree-census-NYC_2015' name='federated.0t8s55w1f7v5vn17te6iy010laek' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t8s55w1f7v5vn17te6iy010laek'>
+            <column caption='Boroname (copy)' datatype='string' name='[Boroname (copy)_3438216893865107456]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[boroname]' />
+            </column>
+            <column-instance column='[tree_dbh]' derivation='Avg' name='[avg:tree_dbh:qk]' pivot='key' type='quantitative' />
+            <column caption='Boroname' datatype='string' name='[boroname]' role='dimension' type='nominal' />
+            <column-instance column='[Boroname (copy)_3438216893865107456]' derivation='None' name='[none:Boroname (copy)_3438216893865107456:nk]' pivot='key' type='nominal' />
+            <column-instance column='[spc_common]' derivation='None' name='[none:spc_common:nk]' pivot='key' type='nominal' />
+            <column caption='Spc Common' datatype='string' name='[spc_common]' role='dimension' type='nominal' />
+            <column caption='Trunk Diameter' datatype='integer' name='[tree_dbh]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:spc_common:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([tree_dbh])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:spc_common:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0t8s55w1f7v5vn17te6iy010laek].[none:spc_common:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0t8s55w1f7v5vn17te6iy010laek].[avg:tree_dbh:qk]' />
+              <text column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Boroname (copy)_3438216893865107456:nk]' />
+              <color column='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Boroname (copy)_3438216893865107456:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{31A19534-4C19-46CB-8BA9-1A9F7EC64197}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3B5D82C7-9555-406B-9FD6-E75F34C2C658}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Phosphate' fontsize='36'>Trees</run>
+            <run bold='true' fontsize='36'>Æ </run>
+            <run bold='true' fontname='Luminari' fontsize='36'>and</run>
+            <run bold='true' fontname='Silom' fontsize='36'>Æ </run>
+            <run bold='true' fontname='Savoye LET' fontsize='36'>Money</run>
+            <run bold='true' fontsize='36'>Æ </run>
+            <run bold='true' fontname='Luminari' fontsize='36'>in</run>
+            <run bold='true' fontsize='36'>Æ </run>
+            <run bold='true' fontcolor='#f1ce63' fontname='SignPainter' fontsize='36'>NYC</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e9eddc' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89224' id='15' param='vert' type-v2='layout-flow' w='98888' x='556' y='9812'>
+            <zone h='89224' id='13' type-v2='layout-basic' w='98888' x='556' y='9812' />
+          </zone>
+          <zone fixed-size='92' h='8848' id='16' is-fixed='true' type-v2='title' w='98888' x='556' y='964'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='27311' id='3' name='A. Total Trees' w='31769' x='2012' y='14006' />
+        <zone h='33333' id='4' name='B. Tree Count Bar' w='30763' x='23554' y='12605' />
+        <zone h='49580' id='5' name='D. Income by Zipcode Map' w='43597' x='54936' y='45378' />
+        <zone h='9804' id='6' name='D. Income by Zipcode Map' pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' type-v2='color' w='22581' x='72532' y='86555' />
+        <zone h='52101' id='7' name='C. Income per Borough' w='46940' x='2515' y='44958' />
+        <zone h='42017' id='17' name='F. Rich vs Poor' w='43793' x='55132' y='1821' />
+        <zone h='10224' id='18' name='F. Rich vs Poor' pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]' type-v2='color' w='7429' x='55621' y='32633' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontname='Phosphate' fontsize='36'>Trees</run>
+                <run bold='true' fontsize='36'>Æ </run>
+                <run bold='true' fontname='Luminari' fontsize='36'>and</run>
+                <run bold='true' fontname='Silom' fontsize='36'>Æ </run>
+                <run bold='true' fontname='Savoye LET' fontsize='36'>Money</run>
+                <run bold='true' fontsize='36'>Æ </run>
+                <run bold='true' fontname='Luminari' fontsize='36'>in</run>
+                <run bold='true' fontsize='36'>Æ </run>
+                <run bold='true' fontcolor='#f1ce63' fontname='SignPainter' fontsize='36'>NYC</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98072' id='19' param='vert' type-v2='layout-flow' w='98888' x='556' y='964'>
+                <zone fixed-size='92' h='8848' id='16' type-v2='title' w='98888' x='556' y='964'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42017' id='17' is-fixed='true' name='F. Rich vs Poor' w='43793' x='55132' y='1821'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10224' id='18' name='F. Rich vs Poor' pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]' type-v2='color' w='7429' x='55621' y='32633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='33333' id='4' is-fixed='true' name='B. Tree Count Bar' w='30763' x='23554' y='12605'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='219' h='27311' id='3' is-fixed='true' name='A. Total Trees' w='31769' x='2012' y='14006'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52101' id='7' is-fixed='true' name='C. Income per Borough' w='46940' x='2515' y='44958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49580' id='5' is-fixed='true' name='D. Income by Zipcode Map' w='43597' x='54936' y='45378'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9804' id='6' name='D. Income by Zipcode Map' pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' type-v2='color' w='22581' x='72532' y='86555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{23DC41F1-C036-47B6-940F-445EF0E3E43E}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='A. Total Trees'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DD4476F-C653-483E-BFC7-B9351FF4C799}' />
+    </window>
+    <window class='worksheet' name='B. Tree Count Bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C93DCB4A-54A9-4163-AE3F-25936704B1E1}' />
+    </window>
+    <window class='worksheet' name='C. Income per Borough'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{506D7D51-B626-4ED6-A375-0EDEEEBD7C80}' />
+    </window>
+    <window class='worksheet' name='D. Income by Zipcode Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:HouseholdsEstimateMedian income (dollars):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{7DDCE810-3BB7-44BE-91F7-145511012610}' />
+    </window>
+    <window class='worksheet' name='E. Zipcodes by Median Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:boroname:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{391A0C4F-C8B6-40BD-8774-6B25F3350F24}' />
+    </window>
+    <window class='worksheet' name='F. Rich vs Poor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:health:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53090395-364C-4777-AA80-C9F04E545C62}' />
+    </window>
+    <window class='worksheet' name='G. Tree Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB7A124C-8811-498F-B376-79654ED554C1}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t8s55w1f7v5vn17te6iy010laek].[none:Boroname (copy)_3438216893865107456:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B6721EEC-4262-4E11-A71D-41454817B039}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E20C8D26-ECE7-4107-B998-2992230D2A20}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='A. Total Trees' />
+        <viewpoint name='B. Tree Count Bar' />
+        <viewpoint name='C. Income per Borough'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D. Income by Zipcode Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='F. Rich vs Poor'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <device-preview visible='true' />
+      <simple-id uuid='{A3A525C4-A55E-43DD-AD64-67A1F402CC74}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Dashboard 3' width='384'>
+      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
+      UyqVREaFExkVbpfu4enu0ORyIfnqD9J1zyD+VAIvzn2L+PhE+XiMW26djkqlIrpDBNEdbEES
+      KpVKXkVcqL+C5qPZFECdWaS6uhqLxUJFbUy1a72ZU33m//gHRw8fx8PDjf4De7N+7ZYrJkvv
+      Pt3lH6eidh3u5KTnqX88TF5uPi4uzphrD806P91oMHLLrBn06duDj97/kgP7j/B/rz7TpHbP
+      D4Ota8MRQ4YNZN5XP9nZUnv26sq+PQfl743JbjSa7GbEF+p/3Sy5usqmWMrLbfsP3Bp5LgLB
+      pdKxUzSffvEvNqzfimSVmD1nZgPlIbg2aDYfQEgb2waZ5KRUkpPOyo6pNrXp57Nr534ARo0Z
+      zsb12y67XUenvtRXOkHBAaCw2R179e7G3j0xfPqfb8jPL3SYvmjhcm6cfhevv/Iew0YMoqam
+      hoW/L2+SLPUjmIBGVzRWqxUfHy+72ZRKpaJT52i7fI3Jfjy28Q1y5/e/TRvbDDQ5ORWz2UxC
+      gi2mPaSR5yIQXA5tQoO5577buPeBOWLwv4b5ywrAbLaQm2MzTeTm5snpw0cOBmDXzn18/eWP
+      QK1NOygAk9Ek73y11B7yNXrMMFQqFWtWb0SlUuLmbhu0LBaLnMdQ7+Co+tRFDgGyLPXlqb9T
+      0svLk0GD+yFJEk8+9gIn407TpWtHRo8Z5jB91m0z6dW7G9XVNfKuSJPJXo76B3OVlJTJuzXr
+      Dsiqw3Telv26SJ/kxLMA9OnXU76mVqvQ6/Xycb411TU4Ozs7lLFX7+4O76mj/g8e0g+1WkVu
+      Th6vv/IelRWVqNUqBgzo4/DeCgSC/11Uz8194rW/WklOdh7VNTV4eLgzdvxIANq1D8PZ2Yma
+      mhrOpqSh0Wr4x3OPEBDgh9UqYagxUFFeSXTHCCIi29O9RxeKi0rIzMjmgYfuZOjwgag1GsLD
+      26JSK8lIzyYqOtzOZliH2WwmLzefmhoD0R0iztleFQoKC4pxcXFmRK1CAujbtwdqtZrsrByC
+      ggJ58eWncXZxbjS9V+9uVFZUkZ9XiK+fD/fcN5vAwHPO2eqqGnKyc6msqMLXzxsXF1v0Te8+
+      PdA76SkuKkGr1TJ02EC868Vbn45PJC+/EK1Ww9TrxhMQ6IfRaEKn09EmNMR2yJcCcrJzKS4q
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
